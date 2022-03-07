@@ -1,0 +1,47 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col d-flex justify-content-end mt-5">
+            <a href="{% url 'post_book' %}"><button type="button" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i></button></a>
+        </div>
+    </div>
+    
+    {% for book in books %}
+    <div class="row mt-5 d-flex align-items-center">
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+    
+        <div class="col-md-7 col-xs-7 col-sm-7">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="{% url 'view_book' book.id %}">
+                        <h5>{{book.title}}</h5>
+    
+                        {% if book.date_added %}
+                        <small class="text-info">last_updated:{{book.date_added}}</small> {% endif %}
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+    
+        <div class="col-md-1 col-xs-1 col-sm-1">
+            <a href="{% url 'view_book' book.id %}"><button type="button" class="btn btn-success btn-lg"><i class="fa fa-folder-open" aria-hidden="true"></i>
+                    </button></a>
+        </div>
+    
+        <div class="col-md-1 col-xs-1 col-sm-1">
+            <a href="{% url 'update_book' book.id %}"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button></a>
+        </div>
+    
+        <div class="col-md-1 col-xs-1 col-sm-1">
+            <a href="{% url 'delete_book' book.id %}"><button type="button" class="btn btn-danger btn-lg"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></a>
+        </div>
+    
+    </div>
+    {% endfor %}
+</div>
+{%endblock content%}

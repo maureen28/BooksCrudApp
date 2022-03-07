@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+    <div class="heading">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+            <br>
+                <h1 class='text-center'>Create a New Book Summary</h1>
+                <br>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="title" placeholder="title" class="form-control mb-3">
+                    <input type="text" name="author" class="form-control mb-3" placeholder="author">
+                    <textarea name="summary" class="form-control mb-3" placeholder="summary"></textarea>
+                    <button type="submit" class="btn btn-success">Post Summary</button>
+                </form>
+                <br>
+            </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+{% endblock content %}

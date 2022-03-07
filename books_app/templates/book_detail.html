@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container text-center"><br><br>
+        <div class="heading">
+                {% if book %}
+                    <h4>{{ book.title}}</h4><hr>
+                    <p >{{ book.summary}}</p>
+                    <p><b>Time created: </b> {{book.date_added}} </p>
+                {% endif %}
+        </div>
+    </div>
+
+{% endblock content %}
