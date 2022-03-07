@@ -48,3 +48,25 @@ source virtual/bin/activate
 * CSS & Bootstrap - CSS determines the appearance of webpages. The styling language was used to add background images and colors and style the site's content.
 * Python  - The language was used to create classes, testcases, and functions to retrieve data
 * [Django](https://www.djangoproject.com/) -  Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+
+
+## Support and contact details
+You are free to suggest and improve the code. To make your changes:
+* Fork the repo
+* Create a new branch
+* Create, add, commit, and push your changes to the branch
+* Create a pull request
+* You can also contact the creator via email: murimimaureen8@gmail.com
+
+## Running the tests
+Use the command given below to run automated tests.
+<code> python manage.py test todo </code>
+
+## Known Bugs
+* None at the moment
+
+## License
+
+[MIT License](LICENSE.md)
+Copyright (c) 2022 **Maureen Wairimu**
+
