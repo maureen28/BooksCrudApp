@@ -40,3 +40,11 @@ source virtual/bin/activate
 <li> Run <code>python3 manage.py runserver</code> to serve the app.</li>
 <li> Use the navigation bar menu to navigate and explore the app.</li>
 </ol>
+
+## Live link: https://maureens-book-app.herokuapp.com/
+
+## Technologies Used
+* HTML - HTML dictates the structure of webpages.
+* CSS & Bootstrap - CSS determines the appearance of webpages. The styling language was used to add background images and colors and style the site's content.
+* Python  - The language was used to create classes, testcases, and functions to retrieve data
+* [Django](https://www.djangoproject.com/) -  Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
